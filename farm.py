@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pickle
 
-st.title("crop price ")
+st.title("Crop Price Prediction")
 
 df = pickle.load(open('df-3.pkl','rb'))
 pipe = pickle.load(open('pipe-3.pkl','rb'),encoding='latin1')
