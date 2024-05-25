@@ -6,7 +6,7 @@ import pickle
 st.title("crop price ")
 
 df = pickle.load(open('df-3.pkl','rb'))
-pipe = pickle.load(open('pipe-3.pkl','rb'))
+pipe = pickle.load(open('pipe-3.pkl','rb'),encoding='latin1')
 
 X = df.drop('Price_per_KG_INR',axis=1)
 y = df.iloc[:,-1]
